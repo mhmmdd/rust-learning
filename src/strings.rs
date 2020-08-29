@@ -9,14 +9,22 @@ pub fn run() {
     println!("{}", hello);
 
     // Get length
+    println!();
     println!("Length hello: {}", hello.len());
     println!("Length hello2: {}", hello2.len());
 
+    println!();
+    println!("Length and Capacity");
+    println!("Length hello: {}", hello.len());
+    println!("Capacity hello: {}", hello.capacity());
     hello.push('W');
-    println!("Length hello: {}", hello2.len());
+    println!("Length hello: {}", hello.len());
+    println!("Capacity hello: {}", hello.capacity());
 
+
+    println!();
     hello.push_str("orld");
-    println!("hello: {}", hello2);
+    println!("hello: {}", hello);
 
     // Capacity in bytes
     println!("Capacity: {}", hello.capacity());
