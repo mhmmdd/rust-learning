@@ -6,10 +6,14 @@ pub fn run() {
         i * i
     };
 
+    let square2 = |i: i32| i*i;
+
     let sum = |a:i32, b:i32| {
         a+b
     };
 
+
     println!("{}", square(2));
+    println!("{}", square2(2));
     println!("{}", sum(2, 3));
 }
