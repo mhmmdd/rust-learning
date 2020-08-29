@@ -12,10 +12,13 @@ mod functions;
 mod pointer_ref;
 mod structs;
 mod enums;
+mod impls;
 // mod cli;
 
 fn main() {
     println!("Hello, world!");
+
+
     print::run();
     vars::run();
     types::run();
@@ -30,5 +33,6 @@ fn main() {
     pointer_ref::run();
     structs::run();
     enums::run();
-    cli::run();
+    impls::run();
+    // cli::run();
 }
