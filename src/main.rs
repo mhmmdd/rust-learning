@@ -13,11 +13,12 @@ mod pointer_ref;
 mod structs;
 mod enums;
 mod impls;
+mod module;
+mod greatings;
 // mod cli;
 
 fn main() {
     println!("Hello, world!");
-
 
     print::run();
     vars::run();
@@ -34,5 +35,7 @@ fn main() {
     structs::run();
     enums::run();
     impls::run();
+    module::run();
+    greatings::hello();
     // cli::run();
 }
